@@ -1,2 +1,14 @@
-requests
-bs4
+about-time==4.2.1
+alive-progress==3.2.0
+beautifulsoup4==4.12.3
+bs4==0.0.2
+certifi==2024.8.30
+charset-normalizer==3.4.0
+exif==1.6.0
+grapheme==0.6.0
+idna==3.10
+pillow==11.0.0
+plum-py==0.8.7
+requests==2.32.3
+soupsieve==2.6
+urllib3==2.2.3
