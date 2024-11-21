@@ -57,9 +57,8 @@ def extractorrr(base_url, html):
 	return image_urls
 
 def blackwidow(url, depth, save_dir):
-	if depth == 0 or url in visited_urls:
+	if depth == 0:
 		return
-	visited_urls.add(url)
 	print(f"Crawling: {url}, Depth: {depth}")
 	try:
 		response = requests.get(url)

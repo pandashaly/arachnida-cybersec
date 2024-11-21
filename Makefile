@@ -8,7 +8,7 @@ all: install make_exec
 
 venv:
 	@echo "Setting up virtual environment..."
-	$(PY) -m venv env
+	test -d env || $(PY) -m venv env
 
 install: venv
 	@echo "Installing python packages..."
@@ -19,6 +19,11 @@ make_exec:
 	@echo "Making Executables..."
 	chmod +x $(SPIDER)
 	chmod +x $(SCORPION)
+
+exit:
+	@echo "Removing executable permissions..."
+	chmod -x $(SPIDER)
+	chmod -x $(SCORPION)
 
 clean:
 	@echo "Cleaning up previous python virtual environment"
